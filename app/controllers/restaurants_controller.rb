@@ -6,6 +6,7 @@ before_action :get_restaurant, only: [:show]
   end
 
   def show
+    @review = Review.new
   end
 
   def new
@@ -21,6 +22,7 @@ before_action :get_restaurant, only: [:show]
       render :new
     end
   end
+
 
   private
 

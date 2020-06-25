@@ -1,0 +1,6 @@
+<ul>
+  <% @restaurant.reviews.each do |review| %>
+    <li><%= review.rating  %>⭐️ <%= review.content %></li>
+<% end %>
+</ul>
+

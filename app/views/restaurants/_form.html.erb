@@ -1,0 +1,11 @@
+<div class="container">
+  <%= simple_form_for :restaurant, :url => restaurants_path, :method => :post do |f| %>
+    <%= f.input :name %>
+    <%= f.input :category %>
+    <%= f.input :address %>
+    <%= f.input :phone_number %>
+    <%= f.submit %>
+  <% end %>
+</div>
+
+
